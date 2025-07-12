@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Theme">
+    <description>WordPress Theme Coding Standards</description>
+    
+    <!-- Include WordPress Coding Standards -->
+    <rule ref="WordPress"/>
+    
+    <!-- Include WooCommerce Coding Standards -->
+    <rule ref="WooCommerce"/>
+    
+    <!-- Include ACF Coding Standards if available -->
+    <rule ref="WordPress-Extra"/>
+    
+    <!-- Exclude some rules that might be too strict for themes -->
+    <rule ref="WordPress.Files.FileName">
+        <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+    </rule>
+    
+    <!-- Allow short array syntax -->
+    <rule ref="Generic.Arrays.DisallowShortArraySyntax"/>
+    
+    <!-- Allow alternative control structure syntax -->
+    <rule ref="Generic.ControlStructures.InlineControlStructure"/>
+    
+    <!-- Scan these files -->
+    <file>.</file>
+    
+    <!-- Ignore these files/directories -->
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*.min.js</exclude-pattern>
+    <exclude-pattern>*.min.css</exclude-pattern>
+</ruleset> 

@@ -1,0 +1,18 @@
+parameters:
+    level: 5
+    paths:
+        - .
+    excludePaths:
+        - node_modules
+        - vendor
+    ignoreErrors:
+        - '#Function get_header not found#'
+        - '#Function get_footer not found#'
+        - '#Function the_title not found#'
+        - '#Function the_field not found#'
+        - '#Function wp_reset_postdata not found#'
+        - '#Function wc_get_template_part not found#'
+        - '#Class WP_Query not found#'
+        - '#Call to an undefined method WP_Query::#'
+    bootstrapFiles:
+        - wp-load.php 
