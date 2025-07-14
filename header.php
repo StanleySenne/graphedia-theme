@@ -20,4 +20,4 @@
 <?php wp_body_open(); ?>
 
 <div id="page" class="site">
-    <a class="skip-link screen-reader-text" href="#primary"> 
+    <!-- <a class="skip-link screen-reader-text" href="#primary">Pular para o conteúdo</a> --> 

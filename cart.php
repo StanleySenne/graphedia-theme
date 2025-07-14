@@ -355,8 +355,8 @@ get_header();
 
 <div class="cart-page">
     <div class="cart-header">
-        <h1>🛒 Seu Carrinho</h1>
-        <p>Revise seus produtos antes de finalizar a compra</p>
+        <h1>🛒 Your Cart</h1>
+        <p>Review your items before completing the purchase.</p>
     </div>
 
     <?php if (!WC()->cart->is_empty()) : ?>
@@ -421,7 +421,7 @@ get_header();
 
                             <div class="cart-item-remove">
                                 <button type="button" class="remove-cart-item" data-cart-item-key="<?php echo esc_attr($cart_item_key); ?>">
-                                    Remover
+                                    Remove
                                 </button>
                             </div>
                         </div>
@@ -432,7 +432,7 @@ get_header();
             </div>
 
             <div class="cart-summary">
-                <h2>📋 Resumo do Pedido</h2>
+                <h2>📋 Order Summary</h2>
                 <div class="cart-totals">
                     <div class="cart-total-row">
                         <span>Subtotal:</span>
@@ -466,7 +466,7 @@ get_header();
 
                     <?php if (wc_tax_enabled() && !WC()->cart->display_prices_including_tax()) : ?>
                         <div class="cart-total-row">
-                            <span>Impostos:</span>
+                            <span>Taxes:</span>
                             <span><?php echo wc_price(WC()->cart->get_taxes_total()); ?></span>
                         </div>
                     <?php endif; ?>
@@ -479,10 +479,10 @@ get_header();
 
                 <div class="cart-actions">
                     <a href="<?php echo esc_url(WC()->cart->get_checkout_url()); ?>" class="cart-action-btn btn-primary">
-                        🛒 Finalizar Compra
+                        🛒 Checkout
                     </a>
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="cart-action-btn btn-secondary">
-                        🛍️ Continuar Comprando
+                        🛍️ Continue shopping
                     </a>
                 </div>
             </div>
@@ -491,10 +491,10 @@ get_header();
     <?php else : ?>
         <div class="empty-cart">
             <div class="empty-cart-icon">🛒</div>
-            <h2>Seu carrinho está vazio</h2>
-            <p>Adicione alguns produtos para começar suas compras!</p>
+            <h2>Your cart is empty.</h2>
+            <p>Add some items to proceed with your purchase.</p>
             <a href="<?php echo esc_url(home_url('/')); ?>" class="continue-shopping">
-                🛍️ Continuar Comprando
+                🛍️ Continue shopping
             </a>
         </div>
     <?php endif; ?>

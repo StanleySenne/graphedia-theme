@@ -177,3 +177,5 @@ Se você encontrar algum problema ou tiver dúvidas:
 ---
 
 **Desenvolvido com ❤️ para criar experiências de e-commerce incríveis!** 
+
+</footer>
